@@ -8,6 +8,7 @@ import { persoasEspanhoisConCan } from "./funcions/exercicio7.js";
 import { persoasConMascotas } from "./funcions/exercicio8.js";
 import { animalMaisComun } from "./funcions/exercicio9.js"
 import { patasAnimais } from "./funcions/exercicio10.js"
+import { persoasConAnimaisConCatroPatas } from "./funcions/exercicio11.js"
 
 let numAfectadosExer1 = numAfectados();
 let numPersoasSanasExer2 = numPersoasSanas();
@@ -56,6 +57,11 @@ console.log(
   "Exercicio 10: O número de patas dos animais é: ", patasAnimaisExer10
 );
 
+let persoasConAnimaisConCatroPatasExer11 = persoasConAnimaisConCatroPatas();
+console.log("Exercicio 11: As persoas con animais de catro patas son: ",
+  persoasConAnimaisConCatroPatasExer11
+);
+
 
 let refExer1 = document.querySelector(`[name='exer-1']`);
 let refExer2 = document.querySelector(`[name='exer-2']`);
@@ -67,6 +73,7 @@ let refExer7 = document.querySelector(`[name='exer-7']`);
 let refExer8 = document.querySelector(`[name='exer-8']`);
 let refExer9 = document.querySelector(`[name='exer-9']`);
 let refExer10 = document.querySelector(`[name='exer-10']`);
+let refExer11 = document.querySelector(`[name='exer-11']`)
 
 refExer1.after(`${numAfectadosExer1}`);
 refExer2.after(numPersoasSanasExer2);
@@ -78,3 +85,4 @@ refExer7.after(persoasEspanhoisExer7);
 refExer8.after(persoasConMascotasExer8);
 refExer9.after(animalMaisComunExer9);
 refExer10.after(patasAnimaisExer10);
+refExer11.after(persoasConAnimaisConCatroPatasExer11);
